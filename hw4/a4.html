@@ -23,22 +23,22 @@
   <script>
     function show()
     {
-        a1 = parseInt(t1.value)
-        a2 = parseInt(t2.value)
+        a1 = parseFloat(t1.value)
+        a2 = parseFloat(t2.value) 
         if(a1>a2)
         {
-            b1.value = "大於"
+            document.getElementById("b1").innerText=a1+"大於"+a2
         }
         else if(a1==a2)
         {
-            b1.value = "等於"
+          document.getElementById("b1").innerText=a1+"等於"+a2
         }
         else
         {
-            b1.value = "小於"
+          document.getElementById("b1").innerText=a1+"小於"+a2
         }
     }
-</script>
+  </script>
 </head>
 
 <body>
